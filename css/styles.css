@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+  --color-background: #f7f5f0;
+  --color-surface: #ffffff;
+  --color-text: #242824;
+  --color-text-muted: #555950;
+  --color-primary: #78856a;
+  --color-secondary: #d9a18c;
+  --color-border: #e6e3da;
+
+  /* Typography */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+
+  /* Layout */
+  --content-width: 1200px;
+  --base-width: 92%;
+  --radius-card: 16px;
+  --radius-button: 999px;
+
+  /* Spacing */
+  --section-spacing: 7rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+}
+
+header {
+  max-width: var(--content-width);
+  width: var(--base-width);
+  margin-inline: auto;
+}
+
+main {
+  max-width: var(--content-width);
+  width: var(--base-width);
+  margin-inline: auto;
+}
+
+.site-title {
+}
