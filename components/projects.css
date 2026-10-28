@@ -1,0 +1,37 @@
+:root {
+  --gap: 20px;
+}
+
+.projects__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.project {
+  width: calc(33.333% - var(--gap));
+  border: 3px solid var(--color-primary--dark);
+  padding: 20px;
+  border-radius: 20px;
+  transition: var(--base-transition);
+}
+
+.project:hover {
+  background-color: var(--color-primary--dark);
+  color: var(--color-text--light);
+}
+
+.project .headline {
+  color: var(--color-primary--dark);
+  transition: var(--base-transition);
+}
+.project:hover .headline {
+  color: var(--color-text--light);
+}
+.project:hover a {
+  color: var(--color-text--light);
+}
+
+.project a:hover {
+  text-decoration: underline;
+}

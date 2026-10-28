@@ -2,14 +2,18 @@
 @import "../components/footer.css";
 @import "../components/header.css";
 @import "../components/about.css";
+@import "../components/skills.css";
+@import "../components/projects.css";
 
 :root {
   /* Colors */
   --color-background: #f7f5f0;
   --color-surface: #ffffff;
   --color-text: #242824;
+  --color-text--light: #f7f5f0;
   --color-text-muted: #555950;
   --color-primary: #78856a;
+  --color-primary--dark: #555950;
   --color-secondary: #d9a18c;
   --color-border: #e6e3da;
 
@@ -26,6 +30,9 @@
 
   /* Spacing */
   --section-spacing: 7rem;
+
+  /* Transition */
+  --base-transition: all 0.3s ease-in-out;
 }
 
 *,
@@ -46,7 +53,8 @@
 body {
   font-family: var(--font-body), sans-serif;
   line-height: 1.5;
-  color: #333;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 h1,
@@ -57,7 +65,27 @@ h5,
 h6 {
   font-family: var(--font-heading), sans-serif;
   line-height: 1.2;
-  margin: 0;
+  margin: 0.5em 0;
+  color: var(--color-primary);
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 1em 0;
 }
 
 ul {
@@ -68,14 +96,15 @@ ul {
 a {
   text-decoration: none;
   color: var(--color-primary);
-  transition: all 0.3s ease-in-out;
+  transition: var(--base-transition);
 }
 
 a:hover {
+  color: var(--color-secondary);
 }
 
-header,
-footer {
+.header__inner,
+.footer__inner {
   max-width: var(--content-width);
   width: var(--base-width);
   margin-inline: auto;
@@ -87,5 +116,14 @@ main {
   margin-inline: auto;
 }
 
-.site-title {
+main > section {
+  margin: 60px 0;
+}
+
+main > section:first-of-type {
+  margin-top: 60px;
+}
+
+main > section:last-of-type {
+  margin-bottom: 60px;
 }
