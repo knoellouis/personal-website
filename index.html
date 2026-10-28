@@ -8,23 +8,37 @@
       content="Keitha Noel-Louis is a frontend developer with five years of professional experience building responsive, accessible web interfaces."
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Keitha Noel-Louis | Frontend Developer</title>
+    <title>Keitha Noel-Louis | Software Developer</title>
   </head>
 
   <body>
     <header class="header">
       <div class="header__inner">
         <h1 class="headline headline--1">
-          Keitha Noel-Louis
-          <span>Frontend Developer | UI/UX</span>
+          <span>Keitha Noel-Louis</span>
+          <span class="role__description"
+            >Software Developer <span aria-hidden="true">|</span> UI/UX</span
+          >
         </h1>
 
         <nav aria-label="Main navigation">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#about" aria-label="go to the about section">About</a>
+            </li>
+            <li>
+              <a href="#skills" aria-label="go to the skills section">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" aria-label="go to the projects section"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" aria-label="go to the contact section"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -32,8 +46,19 @@
 
     <main>
       <section id="about">
-        <section class="section__content">
-          <article class="section__text">
+        <div class="section__content">
+          <picture class="section__image">
+            <source
+              srcset="./images/keitha-noel-louis.jpg"
+              type="image"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/keitha-noel-louis.jpg"
+              alt="Keitha Noel-Louis, a frontend developer based in Hamburg, Germany."
+            />
+          </picture>
+          <div class="section__text">
             <h2 class="section__headline headline headline--2">About Me</h2>
             <p>
               Hi, I'm Keitha Noel-Louis, a frontend developer based in Hamburg,
@@ -66,19 +91,8 @@
               building thoughtful digital experiences that combine good design
               with reliable functionality.
             </p>
-          </article>
-          <picture class="section__image">
-            <source
-              srcset="./images/keitha-noel-louis.jpg"
-              type="image"
-              media="(min-width: 768px)"
-            />
-            <img
-              src="./images/keitha-noel-louis.jpg"
-              alt="Keitha Noel-Louis, a frontend developer based in Hamburg, Germany."
-            />
-          </picture>
-        </section>
+          </div>
+        </div>
       </section>
 
       <section id="skills">

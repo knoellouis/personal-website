@@ -14,17 +14,19 @@
 }
 
 .header .headline {
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-heading), sans-serif;
   line-height: 1.2;
   font-weight: bold;
   color: var(--color-primary);
   margin: 0;
-  span {
-    display: block;
-    font-size: 1rem;
-    font-weight: normal;
-    color: var(--color-secondary);
-  }
+}
+
+.role__description {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--color-secondary);
 }
 
 nav ul {
