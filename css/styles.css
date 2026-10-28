@@ -3,6 +3,7 @@
 @import "../components/header.css";
 @import "../components/about.css";
 @import "../components/skills.css";
+@import "../components/projects.css";
 
 :root {
   /* Colors */
@@ -76,8 +77,8 @@ a:hover {
   color: var(--color-secondary);
 }
 
-header,
-footer {
+.header__inner,
+.footer__inner {
   max-width: var(--content-width);
   width: var(--base-width);
   margin-inline: auto;
@@ -89,5 +90,14 @@ main {
   margin-inline: auto;
 }
 
-.site-title {
+main > section {
+  margin: 100px 0;
+}
+
+main > section:first-of-type {
+  margin-top: 60px;
+}
+
+main > section:last-of-type {
+  margin-bottom: 60px;
 }

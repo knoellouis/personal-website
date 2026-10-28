@@ -1,4 +1,8 @@
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
+  background-color: var(--color-background);
+}
+
+.footer__inner {
 }
