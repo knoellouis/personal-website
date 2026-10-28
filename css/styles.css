@@ -1,6 +1,7 @@
 @import "./fonts.css";
 @import "../components/footer.css";
 @import "../components/header.css";
+@import "../components/about.css";
 
 :root {
   /* Colors */
@@ -66,14 +67,15 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--color-primary);
   transition: all 0.3s ease-in-out;
 }
 
 a:hover {
 }
 
-header {
+header,
+footer {
   max-width: var(--content-width);
   width: var(--base-width);
   margin-inline: auto;
