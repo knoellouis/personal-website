@@ -13,34 +13,18 @@
   justify-content: space-between;
 }
 
-.headline {
+.header .headline {
   font-family: var(--font-heading), sans-serif;
   line-height: 1.2;
   font-weight: bold;
   color: var(--color-primary);
-  margin-right: auto;
+  margin: 0;
   span {
     display: block;
     font-size: 1rem;
     font-weight: normal;
     color: var(--color-secondary);
   }
-}
-
-.headline--1 {
-  font-size: 2.5rem;
-}
-.headline--2 {
-  font-size: 2rem;
-}
-.headline--3 {
-  font-size: 1.5rem;
-}
-.headline--4 {
-  font-size: 1.25rem;
-}
-.headline--5 {
-  font-size: 1rem;
 }
 
 nav ul {

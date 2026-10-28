@@ -32,9 +32,9 @@
 
     <main>
       <section id="about">
-        <h2 class="headline headline--2">About Me</h2>
         <section class="section__content">
           <article class="section__text">
+            <h2 class="section__headline headline headline--2">About Me</h2>
             <p>
               Hi, I'm Keitha Noel-Louis, a frontend developer based in Hamburg,
               Germany, with five years of professional experience building
@@ -69,8 +69,8 @@
           </article>
           <picture class="section__image">
             <source
-              srcset="./images/keitha-noel-louis.webp"
-              type="image/webp"
+              srcset="./images/keitha-noel-louis.jpg"
+              type="image"
               media="(min-width: 768px)"
             />
             <img
@@ -172,12 +172,12 @@
 
         <address>
           <p>
-            Email:
+            <span class="icon icon__email">Email:</span>
             <a href="mailto:knoellouis@gmail.com"> knoellouis@gmail.com </a>
           </p>
 
           <p>
-            GitHub:
+            <span class="icon icon__github">GitHub:</span>
             <a
               href="https://github.com/knoellouis"
               target="_blank"
@@ -188,7 +188,7 @@
           </p>
 
           <p>
-            LinkedIn:
+            <span class="icon icon__linkedin">LinkedIn:</span>
             <a
               href="https://linkedin.com/in/keithanoel-louis"
               target="_blank"
@@ -198,7 +198,9 @@
             </a>
           </p>
 
-          <p>Location: Hamburg, Germany</p>
+          <p>
+            <span class="icon icon__location">Location: </span>Hamburg, Germany
+          </p>
         </address>
       </section>
     </main>
