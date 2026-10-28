@@ -13,16 +13,16 @@
 
   <body>
     <header>
-      <h1>Keitha Noel-Louis</h1>
-      <p>Frontend Developer | UI/UX</p>
+      <h1 class="headline headline--1">
+        Keitha Noel-Louis
+        <span>Frontend Developer | UI/UX</span>
+      </h1>
 
       <nav aria-label="Main navigation">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -30,73 +30,68 @@
 
     <main>
       <section id="about">
-        <h2>About Me</h2>
+        <h2 class="headline headline--2">About Me</h2>
+        <article class="section__text">
+          <p>
+            Hi, I'm Keitha Noel-Louis, a frontend developer based in Hamburg,
+            Germany, with five years of professional experience building
+            responsive and accessible web interfaces.
+          </p>
 
-        <p>
-          Hi, I'm Keitha Noel-Louis, a frontend developer based in Hamburg,
-          Germany, with five years of professional experience building
-          responsive and accessible web interfaces.
-        </p>
+          <p>
+            I've worked with HTML, CSS, SCSS, JavaScript and Tailwind CSS, as
+            well as TYPO3 and WordPress. I enjoy translating design concepts
+            into functional, user-friendly websites while maintaining clean,
+            reusable and maintainable code.
+          </p>
 
-        <p>
-          I work with HTML, CSS, SCSS, JavaScript and Tailwind CSS, as well as
-          TYPO3 and WordPress. I enjoy translating design concepts into
-          functional, user-friendly websites while maintaining clean, reusable
-          and maintainable code.
-        </p>
+          <p>
+            I have experience collaborating with UX/UI designers in Figma,
+            implementing interfaces according to WCAG 2.1 accessibility
+            standards, and contributing to frontend best practices within a
+            team.
+          </p>
 
-        <p>
-          I have experience collaborating with UX/UI designers in Figma,
-          implementing interfaces according to WCAG 2.1 accessibility standards,
-          and contributing to frontend best practices within a team.
-        </p>
+          <p>
+            I'm currently deepening my knowledge of React and TypeScript through
+            personal projects and exploring AI-assisted tools in my development
+            workflow.
+          </p>
 
-        <p>
-          I'm currently deepening my knowledge of React and TypeScript through
-          personal projects and exploring AI-assisted tools in my development
-          workflow.
-        </p>
-
-        <p>
-          My goal is to continue growing as a software developer while building
-          thoughtful digital experiences that combine good design with reliable
-          functionality.
-        </p>
+          <p>
+            My goal is to continue growing as a software developer while
+            building thoughtful digital experiences that combine good design
+            with reliable functionality.
+          </p>
+        </article>
+        <picture class="section__image">
+          <source
+            srcset="./images/keitha-noel-louis.webp"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./images/keitha-noel-louis.jpg"
+            alt="Keitha Noel-Louis, a frontend developer based in Hamburg, Germany."
+          />
+        </picture>
       </section>
 
       <section id="skills">
         <h2>Skills & Technologies</h2>
-
-        <h3>Frontend Development</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>SCSS</li>
-          <li>JavaScript</li>
           <li>Tailwind CSS</li>
+          <li>JavaScript</li>
           <li>Responsive Web Design</li>
           <li>Web Accessibility (WCAG 2.1)</li>
-        </ul>
-
-        <h3>Content Management Systems</h3>
-        <ul>
           <li>TYPO3</li>
-          <li>TYPO3 Fluid Templating</li>
           <li>WordPress</li>
-        </ul>
-
-        <h3>Tools & Collaboration</h3>
-        <ul>
           <li>Git</li>
           <li>GitHub</li>
           <li>Figma</li>
-          <li>Code Reviews</li>
-          <li>Frontend Best Practices</li>
-          <li>AI-Assisted Development Tools</li>
-        </ul>
-
-        <h3>Currently Learning</h3>
-        <ul>
           <li>React</li>
           <li>TypeScript</li>
           <li>Modern Software Development with AI</li>
@@ -151,76 +146,6 @@
             |
             <a href="#" target="_blank" rel="noreferrer">View Source Code</a>
           </p>
-        </article>
-      </section>
-
-      <section id="experience">
-        <h2>Professional Experience</h2>
-
-        <article>
-          <h3>Frontend Developer</h3>
-          <p>Homepage Helden | 2021–2026</p>
-
-          <ul>
-            <li>
-              Built responsive, user-centred frontends using HTML, CSS/SCSS,
-              JavaScript, Tailwind CSS and TYPO3 Fluid.
-            </li>
-            <li>
-              Created and maintained a reusable project template to standardise
-              and speed up new project setups.
-            </li>
-            <li>
-              Collaborated with the UX/UI team to translate Figma design
-              concepts into functional frontend interfaces.
-            </li>
-            <li>
-              Implemented accessible interfaces following WCAG 2.1 standards.
-            </li>
-            <li>
-              Contributed to frontend best practices, code reviews and
-              onboarding new team members.
-            </li>
-            <li>
-              Analysed, debugged and resolved issues in existing projects.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Associate / Stock Lead</h3>
-          <p>Hollister Co. | 2016–2021</p>
-
-          <ul>
-            <li>
-              Managed inventory and stockroom operations to support sales.
-            </li>
-            <li>
-              Coordinated daily operations and collaborated with the sales-floor
-              team.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Café Manager</h3>
-          <p>Felly Belly | 2015–2016</p>
-
-          <ul>
-            <li>Managed daily café operations, inventory and staffing.</li>
-            <li>Handled scheduling and revenue reporting.</li>
-            <li>Maintained hygiene and safety standards.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-
-        <article>
-          <h3>Bachelor of Science in Biology</h3>
-          <p>St. Georges University</p>
-          <p>2008–2012</p>
         </article>
       </section>
 
